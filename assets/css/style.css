@@ -229,7 +229,7 @@ main { display: block; padding-bottom: 3rem; }
 
 @media (max-width: 47.99rem) {
   .header-inner { justify-content: center; }
-  .brand img { width: 170px; }
+  .brand { display: none; }
   .lang-switch { order: -1; width: 100%; justify-content: flex-end; }
 }
 
@@ -350,6 +350,11 @@ main { display: block; padding-bottom: 3rem; }
 .hero .deco:nth-of-type(2) { --size: 80px; top: 30%; right: 3%; }
 .hero .deco:nth-of-type(3) { --size: 56px; bottom: 10%; left: 10%; }
 .hero .deco:nth-of-type(4) { --size: 130px; bottom: 1rem; right: 3%; }
+@media (max-width: 47.99rem) {
+  /* pink, blue + purple flowers overlap the logo on small screens */
+  .hero .deco:nth-of-type(1),
+  .hero .deco:nth-of-type(2) { display: none; }
+}
 
 /* Next gig banner */
 .next-gig {
